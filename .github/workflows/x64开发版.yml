@@ -51,7 +51,7 @@ jobs:
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
 
-    - name: Clone source code # 克隆源代码
+    - name: Clone source code # 克隆 源代码
       id: source
       working-directory: /workdir
       run: |
