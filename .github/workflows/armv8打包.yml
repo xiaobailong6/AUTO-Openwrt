@@ -196,8 +196,8 @@ jobs:
   over:
     needs: [kbuild0, kbuild, wbuild0, wbuild]
     runs-on: ubuntu-18.04
-    steps:
+    #steps:
     #- name: WeChat notification #微信推送
     #  run: curl https://sc.ftqq.com/${{ secrets.ServerChan }}.send?text=armv8打包成功
-    - name: TG notification #TG推送
-      run: curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}&text=armv8打包成功"
+    #- name: TG notification #TG推送
+    #  run: curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}&text=armv8打包成功"
