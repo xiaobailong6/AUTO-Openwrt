@@ -9,8 +9,8 @@ on:
         description: 'kx64'
         required: false
         default: 'false'
-  schedule:
-    - cron: 00 17 * * *
+ # schedule:
+ #   - cron: 00 17 * * *
   watch:
     types: [started]
 
