@@ -9,8 +9,8 @@ on:
         description: 'db'
         required: false
         default: 'false'
-  schedule:
-    - cron: 20 23 * * *
+ # schedule:
+ #  - cron: 20 23 * * *
 
 env:
   UPLOAD_BIN_DIR: true
